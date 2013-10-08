@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<routes>
+  <route url="/admin/" module="Notes" action="index" />
+  <route url="/admin/disconnect\.html" module="Notes" action="disconnect" />
+  <route url="/admin/notes-insert\.html" module="Notes" action="insert" />
+  <route url="/admin/notes-update-([0-9]+)\.html" module="Notes" action="update" vars="id" />
+  <route url="/admin/notes-delete-([0-9]+)\.html" module="Notes" action="delete" vars="id" />
+</routes>

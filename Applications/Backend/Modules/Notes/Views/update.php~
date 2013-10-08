@@ -1,0 +1,30 @@
+<form action="" method="post">
+  <p>
+  <fieldset>
+  <legend>Modifier une note :</legend>
+	Matiere : <select name="eleve">
+		<?php
+	foreach($listeEleve as $eleve)
+	{
+		echo '<option value="' . $eleve->id() .'"> ' . $eleve->nom() . ' </option>';
+	}
+	?>
+	</select> <br />
+	Note : <input type="text" name="valeur" value="" required /><br />
+	</fieldset>
+  <input type="submit" value="Ajouter" />
+  
+  </p>
+</form>
+
+<table>
+<?php
+foreach ($listeNote as $note)
+{
+?>
+  <tr><td><?php echo $note['nomPrenom']; ?></td>
+  <td><?php echo $note['valeur']; ?></td></tr>
+<?php
+}
+?>
+</table>
